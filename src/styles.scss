@@ -1,0 +1,15 @@
+// Import partials
+@import "partials/variables";
+@import "partials/reset";
+@import "partials/mixins";
+@import "partials/color";
+@import "partials/border";
+@import "partials/button";
+@import "partials/flex";
+@import "partials/space";
+@import "partials/type";
+@import "partials/utilities";
+
+// Import custom css
+@import "global";
+@import "responsive";

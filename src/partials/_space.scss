@@ -1,0 +1,130 @@
+// Space - Margin & Padding
+
+$spacer: $margin-standard;
+$spacers: ();
+$spacers: map-merge(
+  (
+    0: 0,
+    1: ($spacer * 1),
+    2: ($spacer * 2),
+    3: ($spacer * 3),
+    4: ($spacer * 4),
+    5: ($spacer * 5),
+    6: ($spacer * 6),
+    7: ($spacer * 7),
+    8: ($spacer * 8),
+    9: ($spacer * 9)
+  ),
+  $spacers
+);
+
+// margin
+.m {
+    margin: $spacer;
+}
+
+@each $size, $length in $spacers {
+    .m-#{$size} {
+        margin: $length;
+    }
+}
+
+// margin-top & bottom
+@each $size, $length in $spacers {
+    .my-#{$size} {
+        margin-top: $length;
+        margin-bottom: $length;
+    }
+}
+
+// margin-left & right
+@each $size, $length in $spacers {
+    .mx-#{$size} {
+        margin-left: $length;
+        margin-right: $length;
+    }
+}
+
+// margin-top
+@each $size, $length in $spacers {
+    .mt-#{$size} {
+        margin-top: $length;
+    }
+}
+
+// margin-bottom
+@each $size, $length in $spacers {
+    .mb-#{$size} {
+        margin-bottom: $length;
+    }
+}
+
+// margin-left
+@each $size, $length in $spacers {
+    .ml-#{$size} {
+        margin-left: $length;
+    }
+}
+
+// margin-right
+@each $size, $length in $spacers {
+    .mr-#{$size} {
+        margin-right: $length;
+    }
+}
+
+
+// padding
+.p {
+    padding: $spacer;
+}
+
+@each $size, $length in $spacers {
+    .p-#{$size} {
+        padding: $length;
+    }
+}
+
+// padding-top & bottom
+@each $size, $length in $spacers {
+    .py-#{$size} {
+        padding-top: $length;
+        padding-bottom: $length;
+    }
+}
+
+// padding-left & right
+@each $size, $length in $spacers {
+    .px-#{$size} {
+        padding-left: $length;
+        padding-right: $length;
+    }
+}
+
+// padding-top
+@each $size, $length in $spacers {
+    .pt-#{$size} {
+        padding-top: $length;
+    }
+}
+
+// padding-bottom
+@each $size, $length in $spacers {
+    .pb-#{$size} {
+        padding-bottom: $length;
+    }
+}
+
+// padding-left
+@each $size, $length in $spacers {
+    .pl-#{$size} {
+        padding-left: $length;
+    }
+}
+
+// padding-right
+@each $size, $length in $spacers {
+    .pr-#{$size} {
+        padding-right: $length;
+    }
+}

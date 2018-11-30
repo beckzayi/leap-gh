@@ -1,0 +1,28 @@
+{
+  "name": "dash-template-1",
+  "version": "1.0.0",
+  "description": "* To view the page",
+  "main": "index.js",
+  "scripts": {
+    "build": "node-sass --include-path scss src/styles.scss dist/styles.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\"",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/beckzayi/leap-gh.git"
+  },
+  "author": "DL",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/beckzayi/leap-gh/issues"
+  },
+  "homepage": "https://beckzayi.github.io/leap-gh",
+  "dependencies": {
+    "gh-pages": "^2.0.1",
+    "node-sass": "^4.10.0",
+    "nodemon": "^1.18.7"
+  }
+}

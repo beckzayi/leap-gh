@@ -1,0 +1,41 @@
+.btn {
+    display: inline-block;
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    border: 1px solid transparent;
+    padding: 8px 16px;
+    height: 32px;
+    font-family: $font-family-base;
+    @include border-radius(3px);
+    min-width: 88px;
+}
+
+.btn:not(:disabled):not(.disabled) {
+    cursor: pointer;
+}
+
+.btn-primary {
+    background: $blue-dark;
+    color: $white;
+    &:hover {
+        background: $blue;
+    }
+}
+
+.btn-secondary {
+    background: $white;
+    color: $grey;
+    border-color: $grey;
+    &:hover {
+        background: $grey-light
+    }
+}
+
+.btn-small {
+    padding: 0 3px;
+    height: 20px;
+    min-width: auto;
+}

@@ -1,0 +1,43 @@
+// Color
+$black: #191919;
+$white: #ffffff;
+$blue: #1055C2;
+$blue-dark: #0e5fe3;
+$blue-light: #e8f0fc;
+$purple: #6c5bc3;
+
+$grey-100: #f5f5f5;
+$grey-200: #d2d5d9;
+$grey-300: #d8d8d8;
+$grey-400: #979797;
+$grey-500: #6c7277;
+$grey-600: #6d7278;
+$grey: $grey-500;
+$grey-dark: $grey-600;
+$grey-light: $grey-100;
+
+// Background
+$bg-white: $white;
+$bg-light: $grey-100;
+
+// Fonts
+$font-family-base: 'Heebo', sans-serif;
+
+$font-size-base: 16px;
+$font-size-14: 14px;
+
+$h1-font-size: $font-size-base * 2.5;
+
+// Margin
+$margin-standard: 10px;
+$padding-standard: 10px;
+
+// Border
+$border-width: 1px;
+$border-color: #d2d5d9;
+
+// Screen Size
+$screen-xs: 576px;
+$screen-sm: 768px;
+$screen-md: 992px;
+$screen-lg: 1200px;

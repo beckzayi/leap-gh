@@ -1,0 +1,20 @@
+// Border
+.border {
+    border: $border-width solid $border-color;
+}
+
+.border-top {
+    border-top: $border-width solid $border-color;
+}
+
+.border-right {
+    border-right: $border-width solid $border-color;
+}
+
+.border-bottom {
+    border-bottom: $border-width solid $border-color;
+}
+
+.border-left {
+    border-left: $border-width solid $border-color;
+}
